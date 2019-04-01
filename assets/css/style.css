@@ -52,7 +52,7 @@ nav{
 
 
 .nav-link{
-	text-align: center;
+	text-align: right;
 }
 
 .nav-link-item{
@@ -60,7 +60,7 @@ nav{
 	color:white;
 	text-decoration: none;
 	height: inherit;
-	margin-left: 20px;
+	margin: 0 20px;
 	font-weight: bolder;
 	display: inline-block;
 	height: 60px;
@@ -70,6 +70,14 @@ nav{
     line-height: 5;
     border-bottom:2px solid rgba(0,0,0,0);
 }
+
+.nav-link-item:first-child{
+	margin-left: 0;
+}
+.nav-link-item:last-child{
+	margin-right: 0;
+}
+
 .nav-link-item:hover{
 	border-bottom-color: white;
 }
@@ -129,8 +137,8 @@ nav{
 }
 
 #sub-title{
-	font-size: 1.5em;
-	letter-spacing: 12px;
+	font-size: 1.25em;
+	letter-spacing: 28px;
 	color: white;
 	font-weight: 700;
 	margin-top:50px;
