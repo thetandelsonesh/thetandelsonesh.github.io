@@ -1,0 +1,150 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+	overflow-x: hidden;
+	position: relative;
+	scroll-behavior: smooth;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*section code only*/
+section{
+	min-height: 100vh;
+}	
+
+
+#section-0{
+	position: relative;
+	overflow: hidden;
+	background-image: url("../images/bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0% 90%;
+	background-attachment: fixed;
+	display: flex;
+	/*flex: 1;*/
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	/*z-index: 1;*/
+
+	/*background-color: rgba(0,0,0,0.6);*/
+}
+
+
+/*nav code*/
+nav{
+	position: fixed;
+	height: 10vh;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	transition: background-color 1s ease-in-out;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#nav-logo{
+	display: none;
+}
+
+
+.nav-link{
+	text-align: center;
+}
+
+.nav-link-item{
+	cursor: pointer;
+	color:white;
+	text-decoration: none;
+	height: inherit;
+	margin-left: 20px;
+	font-weight: bolder;
+	display: inline-block;
+	height: 60px;
+	width: 100px;
+    font-size: 0.8em;
+    line-height: 5;
+    border-bottom:2px solid rgba(0,0,0,0);
+}
+.nav-link-item:hover{
+	border-bottom-color: white;
+}
+.hamburger{
+	display: none;
+	color: white;
+	padding-right: 10px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+.hamburger:hover .alternate-menu{
+	display: none;
+}
+
+.alternate-menu{
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 10vh;
+	height: 90vh;
+	text-align: center;
+	z-index: 999;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+
+.alternate-menu .nav-link-item{
+	display: block;
+	text-align: center;
+}
+.alternate-menu .nav-link{
+	display: block;
+	flex:1;
+}
+
+@media(max-width: 1024px){
+	.nav-link-item{
+		display: none;
+	}
+
+	.hamburger{
+		display: block;
+		text-align: right;
+	}
+}
+/*logo*/
+.logo{
+	width: 50%;
+}
+@media( max-width: 786px ){
+	.logo{
+		width: 80%;
+	}
+}
+
+#sub-title{
+	font-size: 1.5em;
+	color: white;
+	font-weight: 700;
+	margin-top:50px;
+}
+
+/*svg class logo */
+.a {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width:6;
+}
+
+
+
+
+/*other	*/
+.noclicks{
+	pointer-events: none;
+}

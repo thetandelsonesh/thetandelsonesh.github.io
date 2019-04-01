@@ -1,13 +1,81 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/ripple.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico" />
 </head>
-<body>
-    <h1>the tandel sonesh</h1>
+<body onload="startAnimation()" onresize="resizeit()">
+	<nav>
+		<div style="flex: 1;padding: 5px;">
+			<a href="#section-0"><img id="nav-logo" src="assets/images/logo.svg" height="40px" title="nlshnk91"></a>
+		</div>
+		<div style="flex:1" align="right">
+			<div class="nav-link">
+				<a class="nav-link-item" href="#section-1">SECTION 1</a>
+				<a class="nav-link-item" href="#section-2">SECTION 2</a>
+				<a class="nav-link-item" href="#section-3">SECTION 3</a>
+				<a class="nav-link-item" href="#section-4">CONTACT</a>
+				<a class="hamburger" onclick="toggleAlternateMenu()"><i class="material-icons">menu</i></a>
+			</div>
+		</div>
+	</nav>
+	<div class="alternate-menu">
+		<div class="nav-link" align="center">
+			<a class="nav-link-item" href="#section-1">SECTION 1</a>
+			<a class="nav-link-item" href="#section-2">SECTION 2</a>
+			<a class="nav-link-item" href="#section-3">SECTION 3</a>
+			<a class="nav-link-item" href="#section-4">CONTACT</a>
+		</div>
+	</div>
+	
+	<main id="#main">
+		<section class="section" id="section-0" onclick="changeColor(this)" title="click to choose theme">
+			<div style="flex: 1;padding:10px" align="center">
+				<svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 741.3 175.7" onload="drawPath()">
+				  <title>logo_tand</title>
+				  <g>
+				    <polygon class="a" points="0.5 1.1 140 1.1 137.5 72.6 103.5 69.6 97 174.6 43 174.6 37.5 68.6 0.5 70.6 0.5 1.1"/>
+				    <path class="a" d="M312.5,368s86-39,203.5-2.5c0,0-84-70.5-170-57Z" transform="translate(-154 -193.4)"/>
+				    <path class="a" d="M360.5,281.3L412,194.5,493.5,328S420.5,255.5,360.5,281.3Z" transform="translate(-154 -193.4)"/>
+				    <path class="a" d="M894.1,194.5s-86,39-203.5,2.5c0,0,84,70.5,170,57Z" transform="translate(-154 -193.4)"/>
+				    <path class="a" d="M846.1,281.3L794.6,368,713.1,234.5S786.1,307,846.1,281.3Z" transform="translate(-154 -193.4)"/>
+				    <polygon class="a" points="426 113.4 426 172.1 389 172.1 380.5 1.1 435.5 1.1 476 40.1 476 1.1 516 1.1 509 172.1 426 113.4"/>
+				  </g>
+				</svg>
+
+				<div id="sub-title">WORSHIP PROGRAMMING</div>
+
+				<div class="" id="ripple-object"></div>
+			</div>
+			<!-- <h1 style="flex: 1">Hi</h1> -->
+		</section>
+		<section class="section" id="section-1">
+			
+		</section>
+		<section class="section" id="section-2">
+			
+		</section>
+		<section class="section" id="section-3">
+			
+		</section>
+		<section class="section" id="section-4">
+		</section>
+	</main>
+
+	<script type="text/javascript" src="assets/js/particle.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script type="text/javascript">
+
+		
+
+	</script>
+
 </body>
 </html>
+
