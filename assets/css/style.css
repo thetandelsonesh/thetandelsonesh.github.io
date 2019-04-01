@@ -120,6 +120,7 @@ nav{
 /*logo*/
 .logo{
 	width: 50%;
+	opacity: 0;
 }
 @media( max-width: 786px ){
 	.logo{

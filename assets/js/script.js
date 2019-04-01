@@ -44,6 +44,8 @@ function changeColor(){
 
 // draws logo at loading time only once
 function drawPath(){
+	var logo = document.getElementById('logo');
+	logo.style.opacity = 1;
 	var svgs = document.querySelectorAll('.a');
 
 	svgs.forEach(function(path){ 
