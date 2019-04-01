@@ -26,7 +26,10 @@ function changeColor(){
 	// change color of logo
 	for (var i = 0; i < arr.length; i++) {
 		arr[i].style.stroke = '#'+my_colors[my_pointer];
-		
+	}
+	arr = document.getElementsByClassName('nav-link-item');
+	for (var i = 0; i < arr.length; i++) {
+		arr[i].style.color = '#'+my_colors[my_pointer];
 	}
 	setTimeout(function() {
 		rippleObject.classList.remove('ripple');
@@ -86,9 +89,13 @@ window.onscroll = function(){
 			document.getElementsByTagName('nav')[0].style.backgroundColor = '#'+ color;
 		}
 		document.getElementsByTagName('nav')[0].style.boxShadow = "0px 3px 1px #dddddd";
+		var arr = document.getElementsByClassName('nav-link-item');
+		for (var i = 0; i < arr.length; i++) {
+			arr[i].style.color = '#FFFFFF';
+		}
 	}else{
 		navLogo.style.display = "none";
-		document.getElementsByTagName('nav')[0].style.backgroundColor = "rgba(0,0,0,0.3)";
+		document.getElementsByTagName('nav')[0].style.backgroundColor = "transparent";
 		document.getElementsByTagName('nav')[0].style.boxShadow = "none";
 	}
 
